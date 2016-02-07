@@ -1,0 +1,9 @@
+{
+  "name": "the-wedding",
+  "version": "0.0.1",
+  "private": true,
+  "directory" : "public/components",
+  "dependencies": {
+    "angular": "~1.0.6"
+  }
+}

@@ -2,9 +2,10 @@
   "name": "the-wedding",
   "version": "0.0.1",
   "private": true,
+  "main": "web.js",
   "dependencies": {
     "bower": "~1.7.2",
-    "express": "~3.2.4"
+    "express": "~4.9.8"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"

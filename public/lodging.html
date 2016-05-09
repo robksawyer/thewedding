@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <style type="text/css">
+    body {
+			font-family: 'Passion One', cursive;
+      margin: 0; padding: 0;
+			color: #000000;
+			background: url("http://s32.postimg.org/mxl9eyc05/Getty_Images_459948336.jpg") top left no-repeat;
+			background-size: cover;
+			opacity: 0.85;
+    }
+    .gradient{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa9a9a+0,fdd665+29,fdd665+74,bbc154+100 */
+      background: #fa9a9a; /* Old browsers */
+      background: -moz-linear-gradient(top,  #fa9a9a 0%, #fdd665 29%, #fdd665 74%, #bbc154 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #fa9a9a 0%,#fdd665 29%,#fdd665 74%,#bbc154 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #fa9a9a 0%,#fdd665 29%,#fdd665 74%,#bbc154 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa9a9a', endColorstr='#bbc154',GradientType=0 ); /* IE6-9 */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    a{
+      color:white;
+    }
+  	a:visited{
+      color:white;
+    }
+		h1 {
+			letter-spacing: 3px;
+			color: #000000;
+		}
+    img {
+      margin: 2% auto 2% auto;
+      max-width: 90%;
+      text-align: center;
+    }
+    #navigation {
+      position: fixed;
+      height: 5%;
+      background: #f8f8f8;
+      width: 100%;
+      font-family: 'Passion One', cursive;
+      font-size: 1.3em;
+      text-align: left;
+      line-height: 2em;
+      padding: 0 0 0 5%;
+      margin: 0;
+      top: 0; left: 0;
+    }
+    #navigation a {
+      color: #000000;
+      padding-bottom: 0.75%;
+      text-decoration: none;
+			margin-right: 3%;
+    }
+		#navigation a.selected {
+      border-bottom: 3px solid #000000;
+    }
+    #navigation a:hover {
+      color: #000000;
+      border-bottom: 3px solid #000000;
+      text-decoration: none;
+    }
+		#navigation .star {
+      float: right;
+      width: 100px;
+      height: 30px;
+      margin: 0 4% 0 0; padding: 0;
+    }
+    #navigation .star img{
+      display: inline-block;
+      text-align: right;
+      padding: 8% 0 0 0;
+      margin: 0;
+      height: 70%;
+    }
+    #container {
+			background: #fa9a9a;
+      width: 75%;
+  		color: #ffffff;
+      margin: 5% auto 0 auto; padding: 0;
+      text-align: center;
+			opacity: 1;
+  	}
+    #container .top{
+			padding: 2% 1% 0% 1%;
+    }
+
+    #container .top img{
+      margin: 1% 0 !important;
+    }
+
+    #container .bottom{
+      padding-bottom: 3%;
+    }
+
+		#container .center{
+			padding: 0.25% 1% 2% 1%;
+			text-align: left;
+		}
+
+		#container .center a {
+			text-decoration: none;
+		}
+
+		#container .center ul{
+			list-style: none;
+			font-size: 1.25em;
+			letter-spacing: 0.2em;
+		}
+
+		#container .center ul li{
+			list-style-type: none;
+			margin-top: 1%;
+		}
+
+		.map {
+			color: #f7544c;
+		}
+
+    h2{
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: .5em;
+      margin-bottom: 4%;
+      margin-top: -1%;
+      font-style: italic;
+      font: 0.75em Helvetica,Arial,sans-serif;
+      font-weight:100;
+      color: #ffffff;
+      -webkit-transform: rotate(-1deg);
+      -moz-transform: rotate(-1deg);
+    }
+    @media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+      #container {
+        font-size: 0.8em;
+    		padding: 0%;
+    		width:95%;
+        border: 0.5em solid #ffffff;
+    	}
+    }
+    </style>
+  </head>
+  <body>
+    <div id="navigation">
+			<a href="./index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+      <a href="./collect.html" title="We need your address.">WE NEED YOUR ADDRESS</a>
+      <a href="./venue.html" title="The venue.">THE VENUE</a>
+      <a href="./lodging.html" title="Lodging info" class="selected">LODGING INFO</a>
+      <div class="star"><img src="http://s12.postimg.org/6js2ck0zt/star_30.png" alt="star" /></div>
+    </div>
+    <div id="container">
+      <div class="top">
+				<h1>Just a reminder, the wedding is September 3rd, 2016.</h1>
+				<h2>The following are some lodging options that we recommend.</h2>
+      </div>
+      <div class="center">
+				<ul>
+					<li><a href="http://jupiterhotel.com/" title="Jupiter Hotel">Jupiter Hotel</a> <a href="https://www.google.com/maps/dir/Jupiter+Hotel,+800+East+Burnside+Street,+Portland,+OR+97214/Holocene,+1001+Southeast+Morrison+Street,+Portland,+OR+97214/@45.5200581,-122.6588131,17z/data=!3m2!4b1!5s0x5495a0a16af428b7:0x2f622aa9894901e3!4m14!4m13!1m5!1m1!1s0x5495a0a59b252161:0xda16061e576a8957!2m2!1d-122.6570158!2d45.522574!1m5!1m1!1s0x5495a0a14229b791:0x8ea469808aebabbb!2m2!1d-122.6554333!2d45.5173546!3e0" title="Directions from here to venue"><i class="fa fa-map-marker map" aria-hidden="true"></i></a></li>
+					<li><a href="http://hoteleastlund.com/" title="Hotel Eastlund">Hotel Eastlund</a> <a href="https://www.google.com/maps/dir/Hotel+Eastlund,+Northeast+Grand+Avenue,+Portland,+OR/Holocene,+1001+Southeast+Morrison+Street,+Portland,+OR+97214/@45.525715,-122.6694375,15z/data=!3m2!4b1!5s0x5495a0a16af428b7:0x2f622aa9894901e3!4m14!4m13!1m5!1m1!1s0x5495a0ad7dee318b:0xaa9adfbc83f50ce9!2m2!1d-122.660806!2d45.530473!1m5!1m1!1s0x5495a0a14229b791:0x8ea469808aebabbb!2m2!1d-122.6554333!2d45.5173546!3e0" title="Directions from here to venue"><i class="fa fa-map-marker map" aria-hidden="true"></i></a></li>
+					<li><a href="http://www.thenines.com/" title="The Nines Hotel">The Nines Hotel</a> <a href="https://www.google.com/maps/dir/The+Nines,+a+Luxury+Collection+Hotel,+Portland,+Southwest+Morrison+Street,+Portland,+OR/Holocene,+1001+Southeast+Morrison+Street,+Portland,+OR+97214/@45.5176869,-122.677184,15z/data=!3m2!4b1!5s0x5495a0a16af428b7:0x2f622aa9894901e3!4m14!4m13!1m5!1m1!1s0x54950a05a9df9055:0x309cbd634dc61cc0!2m2!1d-122.677912!2d45.5192664!1m5!1m1!1s0x5495a0a14229b791:0x8ea469808aebabbb!2m2!1d-122.6554333!2d45.5173546!3e0" title="Directions from here to venue"><i class="fa fa-map-marker map" aria-hidden="true"></i></a></li>
+					<li><a href="http://www.doubletreeportland.com/" title="DoubleTree by Hilton">DoubleTree by Hilton</a> <a href="https://www.google.com/maps/dir/1000+Northeast+Multnomah+Street,+Portland,+OR+97232/Holocene,+1001+Southeast+Morrison+Street,+Portland,+OR+97214/@45.5235998,-122.6664686,15z/data=!3m2!4b1!5s0x5495a0a16af428b7:0x2f622aa9894901e3!4m14!4m13!1m5!1m1!1s0x5495a0b3b9a22425:0x6a1bb1f4a669a916!2m2!1d-122.6555639!2d45.5307738!1m5!1m1!1s0x5495a0a14229b791:0x8ea469808aebabbb!2m2!1d-122.6554333!2d45.5173546!3e0" title="Directions from here to venue"><i class="fa fa-map-marker map" aria-hidden="true"></i></a></li>
+					<li><a href="http://www.acehotel.com/portland" title="Ace Hotel">Ace Hotel</a> <a href="https://www.google.com/maps/dir/Ace+Hotel+Portland,+Southwest+Stark+Street,+Portland,+OR/Holocene,+1001+Southeast+Morrison+Street,+Portland,+OR+97214/@45.5197783,-122.6772823,15z/data=!3m2!4b1!5s0x5495a0a16af428b7:0x2f622aa9894901e3!4m14!4m13!1m5!1m1!1s0x54950a039f377ed1:0xaabe2b99d8365ed4!2m2!1d-122.6816181!2d45.5220071!1m5!1m1!1s0x5495a0a14229b791:0x8ea469808aebabbb!2m2!1d-122.6554333!2d45.5173546!3e0" title="Directions from here to venue"><i class="fa fa-map-marker map" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.airbnb.com/s/Portland--OR--United-States?guests=2&checkin=09%2F01%2F2016&checkout=09%2F04%2F2016&ss_id=4983oc8k&source=bb" title="AirBnb" style="color:#ff5a5f">airbnb</a></li>
+				</ul>
+      </div>
+      <div class="bottom">
+
+      </div>
+      <br/>
+    </div>
+  </body>
+  <script src="components/angular/angular.min.js"></script>
+  <script src="components/jquery/dist/jquery.min.js"></script>
+</html>

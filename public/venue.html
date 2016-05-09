@@ -2,10 +2,12 @@
 <html ng-app>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <style type="text/css">
     body {
+			font-family: 'Passion One', cursive;
       margin: 0; padding: 0;
+			color: #000000;
     }
     .gradient{
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa9a9a+0,fdd665+29,fdd665+74,bbc154+100 */
@@ -18,11 +20,15 @@
       background-size: cover;
     }
     a{
-      color:white;
+      color: #000000;
     }
   	a:visited{
-      color:white;
+      color: #000000;
     }
+		h1 {
+			letter-spacing: 3px;
+			color: #000000;
+		}
     img {
       margin: 2% auto 2% auto;
       max-width: 90%;
@@ -45,9 +51,9 @@
       color: #000000;
       padding-bottom: 0.75%;
       text-decoration: none;
-      margin-right: 3%;
+			margin-right: 3%;
     }
-    #navigation a.selected {
+		#navigation a.selected {
       border-bottom: 3px solid #000000;
     }
     #navigation a:hover {
@@ -55,7 +61,7 @@
       border-bottom: 3px solid #000000;
       text-decoration: none;
     }
-    #navigation .star {
+		#navigation .star {
       float: right;
       width: 100px;
       height: 30px;
@@ -69,16 +75,20 @@
       height: 70%;
     }
     #container {
-  		padding: 0.25%;
-      width: 70%;
-  		color: white;
-      margin: 0 auto 0 auto;
-      text-align: center;
-      border: 2em solid #ffffff;
+			background: #ffffff;
+      width: 100%;
+  		color: #000000;
+      margin: 0.25% 0 0 0; padding: 0;
+      text-align: left;
   	}
     #container .top{
-      padding-top: 3%;
+			padding: 2% 1% 0% 1%;
     }
+		#container .top p{
+			font-size: 1.3em;
+			font-weight: normal;
+    }
+
     #container .top img{
       margin: 1% 0 !important;
     }
@@ -86,6 +96,31 @@
     #container .bottom{
       padding-bottom: 3%;
     }
+
+		#container .center{
+			padding: 0.25% 1% 2% 1%;
+			text-align: left;
+		}
+
+		#container .center a {
+			text-decoration: none;
+		}
+
+		#container .center ul{
+			list-style: none;
+			font-size: 1.25em;
+			letter-spacing: 0.2em;
+		}
+
+		#container .center ul li{
+			list-style-type: none;
+			margin-top: 1%;
+		}
+
+		.map {
+			color: #f7544c;
+		}
+
     h2{
       text-transform: uppercase;
       font-size: 1em;
@@ -95,7 +130,7 @@
       font-style: italic;
       font: 0.75em Helvetica,Arial,sans-serif;
       font-weight:100;
-      color: #ffffff;
+      color: #000000;
       -webkit-transform: rotate(-1deg);
       -moz-transform: rotate(-1deg);
     }
@@ -111,24 +146,23 @@
   </head>
   <body>
     <div id="navigation">
-      <a href="./index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+			<a href="./index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
       <a href="./collect.html" title="We need your address.">WE NEED YOUR ADDRESS</a>
-      <a href="./venue.html" title="The venue.">THE VENUE</a>
+      <a href="./venue.html" title="The venue." class="selected">THE VENUE</a>
       <a href="./lodging.html" title="Lodging info">LODGING INFO</a>
       <div class="star"><img src="http://s12.postimg.org/6js2ck0zt/star_30.png" alt="star" /></div>
     </div>
-    <div id="container" class="gradient">
+    <div id="container">
       <div class="top">
-        <img src="http://s15.postimg.org/m9chfabwr/top_1.png" alt="header"/>
-        <img class="line" src="http://s28.postimg.org/61v4ev2lp/line.png" alt="line"/>
-        <img src="http://s28.postimg.org/uu5oe4p4t/top_2_v2.png" alt="header"/>
+				<p style="text-align:center"><a href="http://www.holocene.org/" title="Holocene"><img src="http://www.holocene.org/images/header.png" /></a></p>
+				<p>Holocene is a music + arts venue, nightclub and events space in the core of inner-SE Portland. Since the summer of 2003, Holocene has been hosting touring acts from folk to minimal techno, Portland's own most exciting musicians, unforgettable dance parties, and all manner of arts and multimedia parties that blur the line between highbrow and down-and-dirty.</p>
+				<p>Located in the the old Best Auto Parts warehouse on the corner of SE 10th and Morrison, Holocene is a 5000sf, 325-person venue with soaring white walls, 25' ceilings, spindly bow-trusses, and a metric ton of hand-built modern detail. Holocene's two main rooms are each equipped with a superb sound system, video projection, lights, and performance area. A wall between the two will also fold agreeably out of the way, making one large space. You'll find a floor plan + main audio system manifest below.</p>
       </div>
       <div class="center">
-        <img src="http://s24.postimg.org/5em6zunv9/center.png" alt="center" />
+				<iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.356152397136!2d-122.65777200413281!3d45.517379799076615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a0a14229b791%3A0x8ea469808aebabbb!2sHolocene!5e0!3m2!1sen!2sus!4v1462779688844" width="1024" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="bottom">
-        <img src="http://s15.postimg.org/ox6zmrb9n/bottom_1.png" alt="bottom" />
-        <img class="line" src="http://s28.postimg.org/61v4ev2lp/line.png" alt="line"/>
+
       </div>
       <br/>
     </div>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <style type="text/css">
+    body {
+			font-family: 'Passion One', cursive;
+      margin: 0; padding: 0;
+			color: #000000;
+			/*background: url("http://s32.postimg.org/mxl9eyc05/Getty_Images_459948336.jpg") top left no-repeat;*/
+			background-size: cover;
+    }
+    .gradient{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fa9a9a+0,fdd665+29,fdd665+74,bbc154+100 */
+      background: #fa9a9a; /* Old browsers */
+      background: -moz-linear-gradient(top,  #fa9a9a 0%, #fdd665 29%, #fdd665 74%, #bbc154 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #fa9a9a 0%,#fdd665 29%,#fdd665 74%,#bbc154 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #fa9a9a 0%,#fdd665 29%,#fdd665 74%,#bbc154 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa9a9a', endColorstr='#bbc154',GradientType=0 ); /* IE6-9 */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    a{
+      color:white;
+    }
+  	a:visited{
+      color:white;
+    }
+		a:hover{
+			border-bottom: 2px solid #fa9a9a;
+		}
+		h1 {
+			letter-spacing: 3px;
+			color: #000000;
+		}
+    img {
+      margin: 2% auto 2% auto;
+      max-width: 90%;
+      text-align: center;
+    }
+    #navigation {
+      position: fixed;
+      height: 5%;
+      background: #f8f8f8;
+      width: 100%;
+      font-family: 'Passion One', cursive;
+      font-size: 1.3em;
+      text-align: left;
+      line-height: 2em;
+      padding: 0 0 0 5%;
+      margin: 0;
+      top: 0; left: 0;
+			z-index: 1000;
+    }
+    #navigation a {
+      color: #000000;
+      padding-bottom: 0.75%;
+      text-decoration: none;
+			margin-right: 3%;
+    }
+		#navigation a.selected {
+      border-bottom: 3px solid #ffffff;
+    }
+    #navigation a:hover {
+      color: #000000;
+      border-bottom: 3px solid #000000;
+      text-decoration: none;
+    }
+		#navigation .star {
+      float: right;
+      width: 100px;
+      height: 30px;
+      margin: 0 4% 0 0; padding: 0;
+    }
+    #navigation .star img{
+      display: inline-block;
+      text-align: right;
+      padding: 8% 0 0 0;
+      margin: 0;
+      height: 70%;
+    }
+    #container {
+      width: 75%;
+  		color: #000000;
+      margin: 5% auto 0 auto; padding: 0;
+      text-align: center;
+			border: 15px solid #000000;
+  	}
+    #container .top{
+			padding: 2% 1% 0% 1%;
+    }
+
+    #container .top img{
+      margin: 1% 0 !important;
+    }
+
+    #container .bottom{
+      padding-bottom: 3%;
+    }
+
+		#container .center{
+			padding: 0.25% 1% 2% 1%;
+			text-align: left;
+		}
+
+		#container .center a {
+			text-decoration: none;
+		}
+
+		#container .center ul{
+			list-style: none;
+			font-size: 1.25em;
+			letter-spacing: 0.2em;
+		}
+
+		#container .center ul li{
+			list-style-type: none;
+			margin-top: 1%;
+		}
+
+		.map {
+			color: #f7544c;
+		}
+
+    h2{
+      text-transform: uppercase;
+      font-size: 1em;
+      letter-spacing: .5em;
+      margin-bottom: 4%;
+      margin-top: -1%;
+      font-style: italic;
+      font: 0.75em Helvetica,Arial,sans-serif;
+      font-weight:100;
+      color: #000000;
+      -webkit-transform: rotate(-1deg);
+      -moz-transform: rotate(-1deg);
+    }
+    @media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+      #container {
+        font-size: 0.8em;
+    		padding: 0%;
+    		width:95%;
+        border: 0.5em solid #000000;
+    	}
+    }
+    </style>
+  </head>
+  <body>
+    <div id="navigation">
+			<a href="./index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+			<a href="./rsvp.html" title="RSVP" class="selected">RSVP</a>
+      <a href="./collect.html" title="We need your address.">WE NEED YOUR ADDRESS</a>
+      <a href="./venue.html" title="The venue.">THE VENUE</a>
+      <a href="./lodging.html" title="Lodging info">LODGING INFO</a>
+      <div class="star"><img src="http://s12.postimg.org/6js2ck0zt/star_30.png" alt="star" /></div>
+    </div>
+    <div id="container" class="gradient">
+      <div class="top">
+				<h1></h1>
+				<h2></h2>
+      </div>
+      <div class="center">
+				<!-- Begin MailChimp Signup Form -->
+				<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+					#mc_embed_signup{background:none; clear:left; font:1.1em Helvetica,Arial,sans-serif; }
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+				</style>
+				<div id="mc_embed_signup">
+				<form action="//razorfish.us8.list-manage.com/subscribe/post?u=5af169911c5244515f6b6768d&amp;id=2c82835856" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll">
+					<h2>RSVP Now!</h2>
+				<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+				<div class="mc-field-group">
+					<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+				</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				</div>
+				<div class="mc-field-group">
+					<label for="mce-NAME">Name </label>
+					<input type="text" value="" name="NAME" class="" id="mce-NAME">
+				</div>
+				<div class="mc-field-group input-group">
+				    <strong>RSVP Below  <span class="asterisk">*</span>
+				</strong>
+				    <ul><li><input type="radio" value="Will Attend" name="MMERGE3" id="mce-MMERGE3-0"><label for="mce-MMERGE3-0">Will Attend</label></li>
+				<li><input type="radio" value="Will Not Attend" name="MMERGE3" id="mce-MMERGE3-1"><label for="mce-MMERGE3-1">Will Not Attend</label></li>
+				</ul>
+				</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5af169911c5244515f6b6768d_2c82835856" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				    </div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+      </div>
+      <div class="bottom">
+
+      </div>
+      <br/>
+    </div>
+  </body>
+  <script src="components/angular/angular.min.js"></script>
+  <script src="components/jquery/dist/jquery.min.js"></script>
+</html>

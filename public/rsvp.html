@@ -8,7 +8,7 @@
 			font-family: 'Passion One', cursive;
       margin: 0; padding: 0;
 			color: #000000;
-			/*background: url("http://s32.postimg.org/mxl9eyc05/Getty_Images_459948336.jpg") top left no-repeat;*/
+			background: url("http://s33.postimg.org/m5d8ngtm7/bg_grad_flowers.jpg") top left no-repeat;
 			background-size: cover;
     }
     .gradient{
@@ -60,7 +60,7 @@
 			margin-right: 3%;
     }
 		#navigation a.selected {
-      border-bottom: 3px solid #ffffff;
+      border-bottom: 3px solid #6b6d00;
     }
     #navigation a:hover {
       color: #000000;
@@ -81,14 +81,26 @@
       height: 70%;
     }
     #container {
-      width: 75%;
-  		color: #000000;
-      margin: 5% auto 0 auto; padding: 0;
-      text-align: center;
-			border: 15px solid #000000;
+			position: relative;
+			width: 50%;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 20px;
+			text-align: center;
   	}
+		#container:after {
+			content: '';
+		  position: absolute;
+		  width: 1100%; height: 1100%;
+		  top: 20px; right: -500%;
+		  background: rgba(248,236,223,1);
+		  transform-origin: 54% 0;
+		  transform: rotate(45deg);
+		  z-index: -1;
+		}
     #container .top{
 			padding: 2% 1% 0% 1%;
+			text-align: center;
     }
 
     #container .top img{
@@ -155,11 +167,8 @@
       <a href="./lodging.html" title="Lodging info">LODGING INFO</a>
       <div class="star"><img src="http://s12.postimg.org/6js2ck0zt/star_30.png" alt="star" /></div>
     </div>
-    <div id="container" class="gradient">
-      <div class="top">
-				<h1></h1>
-				<h2></h2>
-      </div>
+		<br/><br/><br/><br/>
+    <div id="container">
       <div class="center">
 				<!-- Begin MailChimp Signup Form -->
 				<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -168,10 +177,13 @@
 					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 				</style>
+				<div class="top">
+					<h1>RSVP NOW!</h1>
+					<h2>The favor of a reply is requested<br/>by August 10th, 2016.</h2>
+	      </div>
 				<div id="mc_embed_signup">
 				<form action="//razorfish.us8.list-manage.com/subscribe/post?u=5af169911c5244515f6b6768d&amp;id=2c82835856" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll">
-					<h2>RSVP Now!</h2>
 				<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 				<div class="mc-field-group">
 					<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>

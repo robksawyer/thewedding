@@ -1,0 +1,92 @@
+html{
+	height: 2000px;
+}
+.mobile{
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.mobile div{
+	display: none;
+}
+.mobile button{
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	border: 0;
+	text-indent: 200%;
+	overflow: hidden;
+	background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background-size: 80%;
+	width: 30px;
+	height: 30px;
+	outline: none;
+	transition: all 400ms ease;
+}
+.mobile button.expanded{
+	transform: rotate(90deg);
+	background-color: transparent;
+	border: 0;
+}
+.mobile button a{
+	display: block;
+	background: #eee;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+.mobile button a:hover,
+.mobile button a:active,
+.mobile button a:focus{
+	background: #c7c7c7;
+}
+
+.desktop{
+	display: block;
+	overflow: hidden;
+}
+.desktop a{
+	box-sizing: border-box;
+}
+.nav.mobile {
+	position: fixed;
+	height: auto !important;
+	background: #f8f8f8;
+	width: 100%;
+	text-align: center;
+	line-height: 2em;
+	padding: 0;
+	margin: 0;
+	top: 0; left: 0;
+	z-index: 1000;
+}
+.nav.mobile a {
+	color: #000000;
+	padding-bottom: 0.5%;
+	text-decoration: none;
+	margin: 0;
+	display: block;
+}
+.nav.mobile a:hover {
+	border-bottom: none;
+	color: #777777;
+}
+.nav.mobile a.selected {
+	margin-left: 40%;
+	margin-right: 40%;
+	border-bottom: 4px solid #6b6d00;
+}
+@media (max-width: 800px) {
+	.mobile {
+		display: block;
+	}
+	.desktop{
+		display: none;
+	}
+}
